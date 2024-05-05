@@ -1,0 +1,129 @@
+.App {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.user-card {
+  padding: 16px;
+  border: 0.1px solid #a5a5a56c;
+  border-radius: 3px;
+  width: 250px;
+  text-align: center;
+  margin-bottom: 16px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.user-card img {
+  height: 100px;
+  width: 100px;
+  min-height: 100px;
+  min-width: 100px;
+  border-radius: 50%;
+}
+
+.user-card p {
+  width: max-content;
+  margin: auto;
+  margin-top: 16px;
+  min-height: 24px;
+  min-width: 200px;
+}
+
+.skeleton {
+  background-color: #a5a5a5;
+  animation: skeleton-animation 1s infinite linear;
+}
+
+@keyframes skeleton-animation {
+  0% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}
+
+p{
+  width: 100;
+}
+
+.container{
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  
+  justify-content: space-around;
+}
+
+
+.btn {
+  align-items: center;
+  background-color: #FFFFFF;
+  margin: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 12rem;
+}
+
+.btn:hover,
+.btn:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+
+.btns-container{
+  display: flex;
+
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  gap: 10px;
+
+}
+.load{
+  background-color: green;
+}
